@@ -10,7 +10,6 @@ Pessoa p1 = new Pessoa(nome: "Hóspede 1");
 Pessoa p2 = new Pessoa(nome: "Hóspede 2");
 Pessoa p3 = new Pessoa(nome: "Hóspede 2");
 
-
 hospedes.Add(p1);
 hospedes.Add(p2);
 hospedes.Add(p3);
@@ -21,7 +20,7 @@ hospedes.Add(p3);
 Suite suite = new Suite(tipoSuite: "Premium", capacidade: 3, valorDiaria: 30);
 
 // Cria uma nova reserva, passando a suíte e os hóspedes
-Reserva reserva = new Reserva(diasReservados: 9);
+Reserva reserva = new Reserva(diasReservados: 10);
 reserva.CadastrarSuite(suite);
 reserva.CadastrarHospedes(hospedes);
 

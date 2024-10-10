@@ -45,8 +45,8 @@ namespace DesafioProjetoHospedagem.Models
             
             if (diasReservados >= 10)
             {
-                decimal desconto = 0.10M;
-                valor = diasReservados * valorDiaria - (diasReservados * valorDiaria) * desconto;
+                decimal desconto = 0.10M * (diasReservados * valorDiaria);
+                valor = diasReservados * valorDiaria - desconto;
             }
 
             return valor;
